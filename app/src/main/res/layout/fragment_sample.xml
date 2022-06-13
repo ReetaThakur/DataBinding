@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="name"
+            type="com.reeta.databinding.activityBinding.User" />
+    </data>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:orientation="vertical">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@{name.name}"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:id="@+id/tvName"
+           android:textSize="25sp"
+           android:layout_marginTop="100dp"
+           android:textStyle="bold"
+           android:textColor="@color/black"/>
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Enter Name of person"
+           android:layout_gravity="center"
+           android:layout_margin="10dp"
+           android:id="@+id/etEnterName"
+           android:textSize="25sp"
+           android:layout_marginTop="10dp"
+           android:textStyle="bold"
+           android:textColor="@color/black"/>
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="SetName"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:id="@+id/btnSetName"
+           android:textSize="25sp"
+           android:layout_marginTop="20dp"
+           android:textStyle="bold"
+           android:textColor="@color/black"/>
+   </LinearLayout>
+
+
+</layout>
